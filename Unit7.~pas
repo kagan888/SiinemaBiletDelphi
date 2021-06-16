@@ -1,0 +1,63 @@
+unit Unit7;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, ExtCtrls, DBCtrls, Mask, DB, ADODB;
+
+type
+  TForm7 = class(TForm)
+    ADOConnection1: TADOConnection;
+    ADOQuery1: TADOQuery;
+    ADOQuery1seans_id: TIntegerField;
+    ADOQuery1seans_tarih: TWideStringField;
+    ADOQuery1seans_saat: TWideStringField;
+    ADOQuery1salon_id: TWideStringField;
+    DataSource1: TDataSource;
+    Label1: TLabel;
+    DBEdit1: TDBEdit;
+    Label2: TLabel;
+    DBEdit2: TDBEdit;
+    Label3: TLabel;
+    DBEdit3: TDBEdit;
+    Label4: TLabel;
+    DBEdit4: TDBEdit;
+    DBNavigator1: TDBNavigator;
+    Panel1: TPanel;
+    Button1: TButton;
+    Button2: TButton;
+    Label5: TLabel;
+    Label6: TLabel;
+    Label7: TLabel;
+    MaskEdit1: TMaskEdit;
+    MaskEdit2: TMaskEdit;
+    ComboBox1: TComboBox;
+    Button3: TButton;
+    ADOQuery2: TADOQuery;
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form7: TForm7;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm7.Button1Click(Sender: TObject);
+begin
+panel1.Visible:=true;
+end;
+
+procedure TForm7.Button2Click(Sender: TObject);
+begin
+panel1.Visible:=false;
+end;
+
+end.
